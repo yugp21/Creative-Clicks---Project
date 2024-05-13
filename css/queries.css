@@ -1,0 +1,312 @@
+/* For the mobile phones */
+
+@media (max-width: 34em) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    *::selection{
+        color: white;
+        background-color: black;
+    }
+
+    #nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 8vw;
+        width: 100vw;
+        /* background-color: red; */
+        padding: 20px 15px;
+    }
+    
+    #nav img {
+        height: 6vw;
+    }
+    
+    #nav #nav-center {
+        display: none;
+    }
+
+    #nav i {
+        font-size: 4vw;
+        cursor: pointer;
+    }
+
+    #full {
+        height: 100%;
+        width: 100vw;
+        background-color: rgba(73, 200, 254, 0.826);
+        position: absolute;
+        top: -100%;
+        backdrop-filter: blur(10px);
+        padding: 20px 20px;
+    }
+    
+    #full h4 {
+        font-size: 5vw;
+        font-weight: 500;
+        margin-bottom: 6vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: uppercase;
+        font-weight:400;
+        color: white;
+    }
+    
+    #full i {
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.824);
+        border-radius: 50%;
+        padding: 2px;
+        font-weight: 800;
+        font-size: 2vw;
+        cursor: pointer;
+    }
+
+    .swiper {
+        width: 90%;
+        height: 100%;
+        margin-top: 7vw;
+        z-index: 1;
+      }
+    
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 75vw;
+        object-fit: cover;
+      }
+
+      #under-center {
+        position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5vw;
+        padding-top: 3vw;
+        padding-bottom: 0.5vw;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 2vw;
+        font-weight: 800;
+    }
+
+    
+#hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row;
+    height: 25vh;
+    width: 90vw;
+    /* background-color: red; */
+    margin-left: 5vw;
+    margin-top: 2vw;
+}
+
+#hero-container .small{
+    height: 100%;
+    width: 29vw;
+    /* background-color: blue; */
+}
+
+#hero-container .small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+#hero-para {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: column;
+    padding: 6vw 6vw;
+}
+
+#hero-h1 {
+    font-size: 3.5vw;
+    font-weight: 900;
+    /* background-color: red; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#hero-para .para {
+    display: none;
+}
+
+#types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10vw;
+    margin-top: -145vw;
+    /* background-color: red; */
+
+}
+
+.photo {
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    max-width: 30vw;
+    border-radius: 5px;
+}
+
+.photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+    display: block;
+    margin-top: 3vw;
+    text-align: center;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+#some-info {
+    min-height: 100vh;
+    width: 100vw;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #111;
+    padding-top: 10vw;
+    margin-top: 5vw;
+}
+
+#some-info p {
+    text-align: center;
+    font-size: 8vw;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    width: 100vw;
+    line-height: 10vw;
+}
+
+#some-info .btn {
+    margin-top: 15vw;
+    background-color: #111;
+    color: #fff;
+    padding: 5vw 20vw;
+    border: none;
+    border-radius: 50px;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+#some-info .sh5 {
+    margin-top: 8vw;
+}
+
+#some-info h5 {
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: sans-serif;
+    padding-bottom: 1vw;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: -10rem 2rem 0 2rem;
+}
+
+#footer #r1-side{
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+#footer #center img {
+    height: 10vw;
+    width: 30vw;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+}
+
+#footer #l1-side{
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+.rh{
+    font-size: 3vw;
+    color: #7b7b7b;
+    padding-bottom: 1rem;
+}
+
+.rh1{
+    font-size: 1.5vw;
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+
+.rh1:hover{
+    color: #9d9c9c;
+}
+
+#footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#footer-bottom li{
+    list-style: none;
+    text-transform: uppercase;
+    color: #b9b9b9;
+    font-size: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2rem;
+}
+
+
+#footer-bottom li:nth-child(2){
+    cursor: pointer;
+}
+
+#footer-bottom li:nth-child(3){
+    cursor: pointer;
+}
+
+#footer-bottom p{
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 5rem 1rem 5rem 1rem;
+}
+
+}
